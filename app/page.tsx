@@ -282,7 +282,8 @@ export default function Component() {
                       </div>
                       <div className="flex-1 text-center lg:text-left">
                         <h4 className="text-3xl font-bold text-gray-800 mb-4">
-                          Wayanad Meetup – June 15
+                          Wayanad Meetup –{" "}
+                          <span className="whitespace-nowrap">June 15</span>
                         </h4>
                         <p className="body-text mb-8">
                           Our upcoming event in Wayanad will be the first
