@@ -5,11 +5,9 @@ import Link from "next/link";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { Brands, Images } from "@/lib/data";
 
-const brands1 = Brands.slice(0, Brands.length / 2);
-const brands2 = Brands.slice(Brands.length / 2, Brands.length);
-console.log(Brands);
-console.log(brands1);
-console.log(brands2);
+const brands1 = Brands.slice(0, Brands.length / 3);
+const brands2 = Brands.slice(Brands.length / 3, (Brands.length / 3) * 2);
+const brands3 = Brands.slice((Brands.length / 3) * 2, Brands.length);
 
 export default function Component() {
   return (
@@ -201,11 +199,34 @@ export default function Component() {
                   ))}
                 </InfiniteSlider>
                 <InfiniteSlider
-                  className="feature-grid h-fit py-12 pt-0"
+                  className="feature-grid h-fit py-12 pt-0 pb-6"
                   duration={30}
                   reverse
                 >
                   {brands2.map((brand, i) => (
+                    <div
+                      className="feature-card w-36 h-40 p-4 flex flex-col justify-between gap-4"
+                      key={i}
+                    >
+                      <div className="relative size-20 md:size-24 mx-auto">
+                        <Image
+                          fill
+                          src={brand.src}
+                          alt={brand.name + " logo"}
+                          className="object-cover rounded-xl"
+                          quality={100}
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="card-title text-sm mb-0">{brand.name}</h3>
+                    </div>
+                  ))}
+                </InfiniteSlider>
+                <InfiniteSlider
+                  className="feature-grid h-fit py-12 pt-0"
+                  duration={30}
+                >
+                  {brands3.map((brand, i) => (
                     <div
                       className="feature-card w-36 h-40 p-4 flex flex-col justify-between gap-4"
                       key={i}

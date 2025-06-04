@@ -174,4 +174,24 @@ export const Brands = [
     src: "/logos/railrolls.png",
     name: "Rail Rolls",
   }, 
+  {
+    src: "/logos/hirush global.png",
+    name: "Hirush Global",
+  }, 
+  {
+    src: "/logos/weboft.png",
+    name: "Weboft",
+  }, 
+  {
+    src: "/logos/qlive.png",
+    name: "QLive",
+  }, 
+  {
+    src: "/logos/wistoff.jpg",
+    name: "Wistoff",
+  }, 
+  {
+    src: "/logos/urban trash.png",
+    name: "Urban Trash",
+  }, 
 ];
