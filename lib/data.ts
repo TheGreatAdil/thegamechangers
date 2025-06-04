@@ -148,7 +148,7 @@ export const Brands = [
   },
   {
     src: "/logos/lux adobes.png",
-    name: "Lux Adobes",
+    name: "Luxe Adobes",
   },
   {
     src: "/logos/hey farmer.png",
@@ -161,5 +161,17 @@ export const Brands = [
   {
     src: "/logos/coxdo solutions.png",
     name: "Coxdo Solutions",
+  }, 
+  {
+    src: "/logos/wizzy minds.png",
+    name: "Wizzy Minds",
+  }, 
+  {
+    src: "/logos/sallora.png",
+    name: "Sallora",
+  }, 
+  {
+    src: "/logos/railrolls.png",
+    name: "Rail Rolls",
   }, 
 ];

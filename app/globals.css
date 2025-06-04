@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 @layer base {
@@ -123,19 +123,19 @@ body {
 
   /* Text Styles */
   .section-title {
-    @apply text-5xl font-bold text-gray-800 mb-6;
+    @apply text-4xl md:text-5xl font-bold text-gray-800 mb-6;
   }
 
   .section-subtitle {
-    @apply text-2xl font-semibold text-orange-600 mb-2;
+    @apply text-xl md:text-2xl font-semibold text-orange-600 mb-2;
   }
 
   .body-text {
-    @apply text-lg text-gray-600 leading-relaxed;
+    @apply text-base md:text-lg text-gray-600 leading-relaxed;
   }
 
   .body-text-center {
-    @apply text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto;
+    @apply text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto;
   }
 
   /* Button Styles */

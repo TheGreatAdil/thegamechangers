@@ -183,19 +183,20 @@ export default function Component() {
                 >
                   {brands1.map((brand, i) => (
                     <div
-                      className="feature-card w-56 h-72 p-4 flex flex-col justify-between gap-4"
+                      className="feature-card w-36 h-40 p-4 flex flex-col justify-between gap-4"
                       key={i}
                     >
-                      <div className="relative size-40 md:size-48 mx-auto">
+                      <div className="relative size-20 md:size-24 mx-auto">
                         <Image
                           fill
                           src={brand.src}
                           alt={brand.name + " logo"}
+                          quality={100}
                           className="object-cover rounded-xl"
                           loading="lazy"
                         />
                       </div>
-                      <h3 className="card-title mb-0">{brand.name}</h3>
+                      <h3 className="card-title text-sm mb-0">{brand.name}</h3>
                     </div>
                   ))}
                 </InfiniteSlider>
@@ -206,19 +207,20 @@ export default function Component() {
                 >
                   {brands2.map((brand, i) => (
                     <div
-                      className="feature-card w-56 h-72 p-4 flex flex-col justify-between gap-4"
+                      className="feature-card w-36 h-40 p-4 flex flex-col justify-between gap-4"
                       key={i}
                     >
-                      <div className="relative size-40 md:size-48 mx-auto">
+                      <div className="relative size-20 md:size-24 mx-auto">
                         <Image
                           fill
                           src={brand.src}
                           alt={brand.name + " logo"}
                           className="object-cover rounded-xl"
+                          quality={100}
                           loading="lazy"
                         />
                       </div>
-                      <h3 className="card-title mb-0">{brand.name}</h3>
+                      <h3 className="card-title text-sm mb-0">{brand.name}</h3>
                     </div>
                   ))}
                 </InfiniteSlider>
