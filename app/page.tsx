@@ -28,7 +28,9 @@ export default function Component() {
                 className="bg-gradient-to-r from-orange-500 to-red-500 text-transparent bg-clip-text"
               >
                 🔈 Check out our{" "}
-                <span className="border-b border-red-500">upcoming event!</span>
+                <span className="border-b border-red-500 whitespace-nowrap">
+                  upcoming event!
+                </span>
               </Link>
             </p>
           </div>

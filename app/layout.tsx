@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     template: "%s | The Game Changers",
   },
   description:
-    "Join The Game Changers - a purpose-driven community of entrepreneurs, change-makers, and innovators building initiatives that create real-world impact. Connect, collaborate, and grow together.",
+    "Bringing together purpose-driven individuals who support each other's entrepreneurial journeys while building initiatives that create real-world impact.",
   openGraph: {
     type: "website",
-    title: "The Game Changers - Where Purpose Meets Impact",
+    title: "The Game Changers",
     description:
-      "Join The Game Changers - a purpose-driven community of entrepreneurs, change-makers, and innovators building initiatives that create real-world impact. Connect, collaborate, and grow together.",
+      "Bringing together purpose-driven individuals who support each other's entrepreneurial journeys while building initiatives that create real-world impact.Bringing together purpose-driven individuals who support each other's entrepreneurial journeys while building initiatives that create real-world impact.",
     url: "https://www.thegamechangers.world",
     siteName: "The Game Changers",
     images: [
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Game Changers - Where Purpose Meets Impact",
+    title: "The Game Changers",
     description:
-      "Join a purpose-driven community of entrepreneurs, change-makers, and innovators creating real-world impact.",
+      "Bringing together purpose-driven individuals who support each other's entrepreneurial journeys while building initiatives that create real-world impact.",
     images: ["/og-image.jpg"],
   },
   alternates: {
