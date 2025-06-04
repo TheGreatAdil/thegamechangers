@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import Link from "next/link";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
-import { Images } from "@/lib/images";
+import { Brands, Images } from "@/lib/data";
 
 export default function Component() {
   return (
@@ -158,6 +158,41 @@ export default function Component() {
                     community
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section-spacing">
+          <div className="section-container">
+            <div className="glass-card section-padding pb-4">
+              <h2 className="section-title text-center mb-0">
+                Brands Behind The Game Changers
+              </h2>
+
+              <div className="max-w-4xl mx-auto [mask-image:linear-gradient(to_right,transparent,white,white,white,transparent)]">
+                <InfiniteSlider
+                  className="feature-grid h-fit py-12"
+                  duration={10}
+                >
+                  {Brands.map((brand, i) => (
+                    <div
+                      className="feature-card w-56 p-4 flex flex-col justify-between gap-4"
+                      key={i}
+                    >
+                      <div className="relative size-40 md:size-48 mx-auto">
+                        <Image
+                          fill
+                          src={brand.src}
+                          alt={brand.name + " logo"}
+                          className="object-cover rounded-xl"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="card-title mb-0">{brand.name}</h3>
+                    </div>
+                  ))}
+                </InfiniteSlider>
               </div>
             </div>
           </div>

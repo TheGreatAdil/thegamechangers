@@ -88,3 +88,39 @@ export const Images = [
     alt: "Team photo at ZilBank office",
   },
 ];
+
+export const Brands = [
+  {
+    src: "/logos/tascbar.png",
+    name: "Tascbar",
+  },
+  {
+    src: "/logos/stem cadets.png",
+    name: "Stem Cadets",
+  },
+  {
+    src: "/logos/aroosh.png",
+    name: "Aroosh",
+  },
+  {
+    src: "/logos/lynq.png",
+    name: "Lynq Capital",
+  },
+  {
+    src: "/logos/note ai.png",
+    name: "Note AI",
+  },
+  {
+    src: "/logos/kkai cup.png",
+    name: "Kkai Cup",
+  },
+  {
+    src: "/logos/luvwish.jpg",
+    name: "Luvwish",
+  },
+  {
+    src: "/logos/langstroth.png",
+    name: "Langstroth",
+  },
+  
+];
