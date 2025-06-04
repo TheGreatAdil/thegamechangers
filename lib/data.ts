@@ -115,7 +115,7 @@ export const Brands = [
     name: "Kkai Cup",
   },
   {
-    src: "/logos/luvwish.jpg",
+    src: "/logos/luvwish.png",
     name: "Luvwish",
   },
   {
