@@ -175,7 +175,7 @@ body {
 
   /* Hero & Typography */
   .hero-title {
-    @apply text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg text-center;
+    @apply text-5xl md:text-8xl font-extrabold text-gray-800 drop-shadow-lg text-center;
   }
 
   .brand-link {

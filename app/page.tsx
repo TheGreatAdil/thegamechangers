@@ -2,6 +2,8 @@ import { Mail, Instagram } from "lucide-react";
 import Image from "next/image";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import Link from "next/link";
+import { InfiniteSlider } from "@/components/ui/infinite-slider";
+import { Images } from "@/lib/images";
 
 export default function Component() {
   return (
@@ -14,7 +16,21 @@ export default function Component() {
         {/* Hero Section */}
         <section className="section-spacing" id="home">
           <div className="glass-card section-padding max-w-6xl mx-auto">
-            <h1 className="hero-title">THE GAME CHANGERS</h1>
+            <h1 className="hero-title mb-8">The Game Changers</h1>
+            <p className="text-xl text-gray-600 text-center max-w-4xl mx-auto leading-relaxed">
+              Bringing together purpose-driven individuals who support each
+              other's entrepreneurial journeys while building initiatives that
+              create real-world impact.
+              <br />
+              <br />
+              <Link
+                href={"/#events"}
+                className="bg-gradient-to-r from-orange-500 to-red-500 text-transparent bg-clip-text"
+              >
+                🔈 Check out our{" "}
+                <span className="border-b border-red-500">upcoming event!</span>
+              </Link>
+            </p>
           </div>
         </section>
 
@@ -65,8 +81,9 @@ export default function Component() {
                     Game Changers
                   </Link>{" "}
                   was born during the Huddle Global Program in 2022, when a
-                  group of passionate individuals met — including students from
-                  MEA Engineering College and other aspiring entrepreneurs.
+                  group of passionate individuals met — including student
+                  volunteers from MEA Engineering College and other aspiring
+                  entrepreneurs.
                   <br />
                   <br />
                   The initial connection sparked something powerful. The
@@ -159,7 +176,7 @@ export default function Component() {
                   problem-solving.
                 </p>
               </div>
-              <div className="mb-16">
+              <div className="mb-16" id="events">
                 <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">
                   Upcoming Event
                 </h3>
@@ -197,9 +214,26 @@ export default function Component() {
               </div>
               <div>
                 <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-                  Previous Meetups
+                  Our Journey So Far
                 </h3>
-                <div className="max-w-4xl mx-auto"></div>
+                <div className="max-w-4xl mx-auto [mask-image:linear-gradient(to_right,transparent,white,white,white,transparent)]">
+                  <InfiniteSlider className="h-fit" duration={50} reverse>
+                    {Images.map((image, i) => (
+                      <div
+                        key={i}
+                        className="relative size-40 md:size-48 mx-auto"
+                      >
+                        <Image
+                          fill
+                          src={image.src}
+                          alt={image.alt}
+                          className="object-cover rounded-xl"
+                          loading="lazy"
+                        />
+                      </div>
+                    ))}
+                  </InfiniteSlider>
+                </div>
               </div>
             </div>
           </div>
@@ -248,7 +282,7 @@ export default function Component() {
 
               <div className="border-t border-white/20 text-center">
                 <p className="text-gray-500 text-sm mt-6 md:mt-4">
-                  Powered by{" "}
+                  Designed at{" "}
                   <Link href="https://tascbar.com" className="underline">
                     Tascbar
                   </Link>
