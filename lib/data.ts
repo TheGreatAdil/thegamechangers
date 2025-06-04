@@ -1,7 +1,7 @@
 export const Images = [
   {
     src: "/previous/image 1.jpg",
-    alt: "Group receiving award at DIBS event",
+    alt: "Tascbar founders with mentor",
   },
   {
     src: "/previous/image 2.jpg",
@@ -87,13 +87,13 @@ export const Images = [
     src: "/previous/image 22.jpg",
     alt: "Team photo at ZilBank office",
   },
+  {
+    src: "/previous/image 23.jpg",
+    alt: "Group receiving award at DIBS event",
+  },
 ];
 
 export const Brands = [
-  {
-    src: "/logos/tascbar.png",
-    name: "Tascbar",
-  },
   {
     src: "/logos/stem cadets.png",
     name: "Stem Cadets",
@@ -101,6 +101,10 @@ export const Brands = [
   {
     src: "/logos/aroosh.png",
     name: "Aroosh",
+  },
+  {
+    src: "/logos/tascbar.png",
+    name: "Tascbar",
   },
   {
     src: "/logos/lynq.png",
@@ -122,5 +126,40 @@ export const Brands = [
     src: "/logos/langstroth.png",
     name: "Langstroth",
   },
-  
+  {
+    src: "/logos/mulakupetti.png",
+    name: "Mulakupetti",
+  },
+  {
+    src: "/logos/guide4career.png",
+    name: "Guide4Career",
+  },
+  {
+    src: "/logos/tefora.png",
+    name: "Tefora",
+  },
+  {
+    src: "/logos/ecomex.png",
+    name: "Ecomex",
+  },
+  {
+    src: "/logos/spectrum.png",
+    name: "Spectrum",
+  },
+  {
+    src: "/logos/lux adobes.png",
+    name: "Lux Adobes",
+  },
+  {
+    src: "/logos/hey farmer.png",
+    name: "Hey Farmer",
+  }, 
+  {
+    src: "/logos/sponsor studio.png",
+    name: "Sponsor Studio",
+  }, 
+  {
+    src: "/logos/coxdo solutions.png",
+    name: "Coxdo Solutions",
+  }, 
 ];

@@ -5,6 +5,12 @@ import Link from "next/link";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { Brands, Images } from "@/lib/data";
 
+const brands1 = Brands.slice(0, Brands.length / 2);
+const brands2 = Brands.slice(Brands.length / 2, Brands.length);
+console.log(Brands);
+console.log(brands1);
+console.log(brands2);
+
 export default function Component() {
   return (
     <div className="min-h-screen">
@@ -170,14 +176,37 @@ export default function Component() {
                 Brands Behind The Game Changers
               </h2>
 
-              <div className="max-w-4xl mx-auto [mask-image:linear-gradient(to_right,transparent,white,white,white,transparent)]">
+              <div className="max-w-4xl mx-auto [mask-image:linear-gradient(to_right,transparent,white,white,white,white,white,transparent)]">
                 <InfiniteSlider
-                  className="feature-grid h-fit py-12"
-                  duration={10}
+                  className="feature-grid h-fit py-12 pb-6"
+                  duration={30}
                 >
-                  {Brands.map((brand, i) => (
+                  {brands1.map((brand, i) => (
                     <div
-                      className="feature-card w-56 p-4 flex flex-col justify-between gap-4"
+                      className="feature-card w-56 h-72 p-4 flex flex-col justify-between gap-4"
+                      key={i}
+                    >
+                      <div className="relative size-40 md:size-48 mx-auto">
+                        <Image
+                          fill
+                          src={brand.src}
+                          alt={brand.name + " logo"}
+                          className="object-cover rounded-xl"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="card-title mb-0">{brand.name}</h3>
+                    </div>
+                  ))}
+                </InfiniteSlider>
+                <InfiniteSlider
+                  className="feature-grid h-fit py-12 pt-0"
+                  duration={30}
+                  reverse
+                >
+                  {brands2.map((brand, i) => (
+                    <div
+                      className="feature-card w-56 h-72 p-4 flex flex-col justify-between gap-4"
                       key={i}
                     >
                       <div className="relative size-40 md:size-48 mx-auto">
@@ -253,7 +282,7 @@ export default function Component() {
                 <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">
                   Our Journey So Far
                 </h3>
-                <div className="max-w-4xl mx-auto [mask-image:linear-gradient(to_right,transparent,white,white,white,transparent)]">
+                <div className="max-w-4xl mx-auto [mask-image:linear-gradient(to_right,transparent,white,white,white,white,transparent)]">
                   <InfiniteSlider className="h-fit" duration={50} reverse>
                     {Images.map((image, i) => (
                       <div
