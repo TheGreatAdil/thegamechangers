@@ -194,4 +194,36 @@ export const Brands = [
     src: "/logos/urban trash.png",
     name: "Urban Trash",
   }, 
+  {
+    src: "/logos/mows.png",
+    name: "Mows",
+  }, 
+  {
+    src: "/logos/ashcorp academy.png",
+    name: "Ashcorp Academy",
+  }, 
+  {
+    src: "/logos/earniko.png",
+    name: "Earniko",
+  }, 
+  {
+    src: "/logos/mento concepts.png",
+    name: "Mento Concepts",
+  }, 
+  {
+    src: "/logos/all maxed.png",
+    name: "All Maxed",
+  }, 
+  {
+    src: "/logos/aiwa ads.png",
+    name: "Aiwa Ads",
+  }, 
+  {
+    src: "/logos/yudif.png",
+    name: "Yudif",
+  }, 
+  {
+    src: "/logos/zmplit.png",
+    name: "zmplit",
+  }, 
 ];
