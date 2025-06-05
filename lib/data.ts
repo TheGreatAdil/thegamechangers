@@ -226,4 +226,12 @@ export const Brands = [
     src: "/logos/zmplit.png",
     name: "zmplit",
   }, 
+  {
+    src: "/logos/inax.png",
+    name: "Inax",
+  }, 
+  {
+    src: "/logos/uptodate games.png",
+    name: "Uptodate Games",
+  }, 
 ];
