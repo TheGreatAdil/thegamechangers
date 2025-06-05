@@ -234,4 +234,8 @@ export const Brands = [
     src: "/logos/uptodate games.png",
     name: "Uptodate Games",
   }, 
+  {
+    src: "/logos/tea talk.png",
+    name: "Tea Talk",
+  }, 
 ];
