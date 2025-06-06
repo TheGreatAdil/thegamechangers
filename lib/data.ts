@@ -95,147 +95,147 @@ export const Images = [
 
 export const Brands = [
   {
-    src: "/logos/stem cadets.png",
+    src: "/logos/low/stem cadets.webp",
     name: "Stem Cadets",
   },
   {
-    src: "/logos/aroosh.png",
+    src: "/logos/low/aroosh.webp",
     name: "Aroosh",
   },
   {
-    src: "/logos/tascbar.png",
+    src: "/logos/low/tascbar.webp",
     name: "Tascbar",
   },
   {
-    src: "/logos/lynq.png",
+    src: "/logos/low/lynq.webp",
     name: "Lynq Capital",
   },
   {
-    src: "/logos/note ai.png",
+    src: "/logos/low/note ai.webp",
     name: "Note AI",
   },
   {
-    src: "/logos/kkai cup.png",
+    src: "/logos/low/kkai cup.webp",
     name: "Kkai Cup",
   },
   {
-    src: "/logos/luvwish.png",
+    src: "/logos/low/luvwish.webp",
     name: "Luvwish",
   },
   {
-    src: "/logos/langstroth.png",
+    src: "/logos/low/langstroth.webp",
     name: "Langstroth",
   },
   {
-    src: "/logos/mulakupetti.png",
+    src: "/logos/low/mulakupetti.webp",
     name: "Mulakupetti",
   },
   {
-    src: "/logos/guide4career.png",
+    src: "/logos/low/guide4career.webp",
     name: "Guide4Career",
   },
   {
-    src: "/logos/tefora.png",
+    src: "/logos/low/tefora.webp",
     name: "Tefora",
   },
   {
-    src: "/logos/ecomex.png",
+    src: "/logos/low/ecomex.webp",
     name: "Ecomex",
   },
   {
-    src: "/logos/spectrum.png",
+    src: "/logos/low/spectrum.webp",
     name: "Spectrum",
   },
   {
-    src: "/logos/lux adobes.png",
+    src: "/logos/low/lux adobes.webp",
     name: "Luxe Adobes",
   },
   {
-    src: "/logos/hey farmer.png",
+    src: "/logos/low/hey farmer.webp",
     name: "Hey Farmer",
   }, 
   {
-    src: "/logos/sponsor studio.png",
+    src: "/logos/low/sponsor studio.webp",
     name: "Sponsor Studio",
   }, 
   {
-    src: "/logos/coxdo solutions.png",
+    src: "/logos/low/coxdo solutions.webp",
     name: "Coxdo Solutions",
   }, 
   {
-    src: "/logos/wizzy minds.png",
+    src: "/logos/low/wizzy minds.webp",
     name: "Wizzy Minds",
   }, 
   {
-    src: "/logos/sallora.png",
+    src: "/logos/low/sallora.webp",
     name: "Sallora",
   }, 
   {
-    src: "/logos/railrolls.png",
+    src: "/logos/low/railrolls.webp",
     name: "Rail Rolls",
   }, 
   {
-    src: "/logos/hirush global.png",
+    src: "/logos/low/hirush global.webp",
     name: "Hirush Global",
   }, 
   {
-    src: "/logos/weboft.png",
+    src: "/logos/low/weboft.webp",
     name: "Weboft",
   }, 
   {
-    src: "/logos/qlive.png",
+    src: "/logos/low/qlive.webp",
     name: "QLive",
   }, 
   {
-    src: "/logos/wistoff.jpg",
+    src: "/logos/low/wistoff.jpg",
     name: "Wistoff",
   }, 
   {
-    src: "/logos/urban trash.png",
+    src: "/logos/low/urban trash.webp",
     name: "Urban Trash",
   }, 
   {
-    src: "/logos/mows.png",
+    src: "/logos/low/mows.webp",
     name: "Mows",
   }, 
   {
-    src: "/logos/ashcorp academy.png",
+    src: "/logos/low/ashcorp academy.webp",
     name: "Ashcorp Academy",
   }, 
   {
-    src: "/logos/earniko.png",
+    src: "/logos/low/earniko.webp",
     name: "Earniko",
   }, 
   {
-    src: "/logos/mento concepts.png",
+    src: "/logos/low/mento concepts.webp",
     name: "Mento Concepts",
   }, 
   {
-    src: "/logos/all maxed.png",
+    src: "/logos/low/all maxed.webp",
     name: "All Maxed",
   }, 
   {
-    src: "/logos/aiwa ads.png",
+    src: "/logos/low/aiwa ads.webp",
     name: "Aiwa Ads",
   }, 
   {
-    src: "/logos/yudif.png",
+    src: "/logos/low/yudif.webp",
     name: "Yudif",
   }, 
   {
-    src: "/logos/zmplit.png",
+    src: "/logos/low/zmplit.webp",
     name: "zmplit",
   }, 
   {
-    src: "/logos/inax.png",
+    src: "/logos/low/inax.webp",
     name: "Inax",
   }, 
   {
-    src: "/logos/uptodate games.png",
+    src: "/logos/low/uptodate games.webp",
     name: "Uptodate Games",
   }, 
   {
-    src: "/logos/tea talk.png",
+    src: "/logos/low/tea talk.webp",
     name: "Tea Talk",
   }, 
 ];

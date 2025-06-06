@@ -218,7 +218,6 @@ export default function Component() {
                           alt={brand.name + " logo"}
                           className="object-cover rounded-xl"
                           quality={100}
-                          loading="lazy"
                         />
                       </div>
                       <h3 className="card-title text-sm mb-0">{brand.name}</h3>
@@ -241,7 +240,6 @@ export default function Component() {
                           alt={brand.name + " logo"}
                           className="object-cover rounded-xl"
                           quality={100}
-                          loading="lazy"
                         />
                       </div>
                       <h3 className="card-title text-sm mb-0">{brand.name}</h3>
@@ -321,7 +319,6 @@ export default function Component() {
                           src={image.src}
                           alt={image.alt}
                           className="object-cover rounded-xl"
-                          loading="lazy"
                         />
                       </div>
                     ))}
