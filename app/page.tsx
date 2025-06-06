@@ -4,6 +4,7 @@ import { BackgroundGradientAnimation } from "@/components/ui/background-gradient
 import Link from "next/link";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { Brands, Images } from "@/lib/data";
+import CaptureButton from "@/components/CaptureButton";
 
 const brands1 = Brands.slice(0, Brands.length / 3);
 const brands2 = Brands.slice(Brands.length / 3, (Brands.length / 3) * 2);
@@ -287,12 +288,13 @@ export default function Component() {
                           deeper connections and plan impactful initiatives
                           together.
                         </p>
-                        <Link
+                        <CaptureButton
                           href="https://makemypass.com/event/game-changers-meetup"
+                          eventName="Get Tickets"
                           className="btn-gradient btn-shimmer inline-block text-lg group"
                         >
-                          <button className="relative z-10">Get Tickets</button>
-                        </Link>
+                          Get Tickets
+                        </CaptureButton>
                       </div>
                     </div>
                   </div>
@@ -352,15 +354,14 @@ export default function Component() {
                       info@thegamechangers.world
                       <Mail className="size-4 ml-2" />
                     </a>
-                    <a
+                    <CaptureButton
                       href="https://www.instagram.com/thegamechangers.world/"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      eventName="Visit TheGameChangers Instagram"
                       className="flex items-center justify-center md:justify-end text-gray-600 hover:text-orange-600 transition"
                     >
                       @thegamechangers.world
                       <Instagram className="size-4 ml-2" />
-                    </a>
+                    </CaptureButton>
                   </div>
                 </div>
               </div>
@@ -368,9 +369,13 @@ export default function Component() {
               <div className="border-t border-white/20 text-center">
                 <p className="text-gray-500 text-sm mt-6 md:mt-4">
                   Designed at{" "}
-                  <Link href="https://tascbar.com" className="underline">
+                  <CaptureButton
+                    href="https://tascbar.com"
+                    eventName="Visit Tascbar"
+                    className="underline"
+                  >
                     Tascbar
-                  </Link>
+                  </CaptureButton>
                 </p>
               </div>
             </div>
