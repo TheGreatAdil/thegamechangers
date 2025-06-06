@@ -187,7 +187,7 @@ export const Brands = [
     name: "QLive",
   }, 
   {
-    src: "/logos/low/wistoff.jpg",
+    src: "/logos/low/wistoff.webp",
     name: "Wistoff",
   }, 
   {
