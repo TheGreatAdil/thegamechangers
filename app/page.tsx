@@ -179,8 +179,8 @@ export default function Component() {
 
               <div className="max-w-4xl mx-auto [mask-image:linear-gradient(to_right,transparent,white,white,white,white,white,transparent)]">
                 <InfiniteSlider
-                  className="feature-grid gap-2 h-fit py-12 pb-4 md:pb-6"
-                  duration={0}
+                  className="h-fit py-12 pb-4 md:pb-6"
+                  duration={30}
                 >
                   {brands1.map((brand, i) => (
                     <div
@@ -203,8 +203,8 @@ export default function Component() {
                   ))}
                 </InfiniteSlider>
                 <InfiniteSlider
-                  className="feature-grid h-fit py-12 pt-0 pb-4 md:pb-6"
-                  duration={0}
+                  className="h-fit py-12 pt-0 pb-4 md:pb-6"
+                  duration={30}
                   reverse
                 >
                   {brands2.map((brand, i) => (
@@ -224,10 +224,7 @@ export default function Component() {
                     </div>
                   ))}
                 </InfiniteSlider>
-                <InfiniteSlider
-                  className="feature-grid h-fit pb-4 md:pb-6"
-                  duration={0}
-                >
+                <InfiniteSlider className="h-fit pb-4 md:pb-6" duration={30}>
                   {brands3.map((brand, i) => (
                     <div
                       className="feature-card w-24 md:w-36 h-30 md:h-40 p-3 md:p-4 flex flex-col justify-between"

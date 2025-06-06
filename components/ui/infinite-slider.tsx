@@ -88,12 +88,11 @@ export function InfiniteSlider({
   return (
     <div className={cn("overflow-hidden", className)}>
       <motion.div
-        className="flex w-max"
+        className="flex w-max gap-4 md:gap-6"
         style={{
           ...(direction === "horizontal"
             ? { x: translation }
             : { y: translation }),
-          gap: `${gap}px`,
           flexDirection: direction === "horizontal" ? "row" : "column",
         }}
         ref={ref}
