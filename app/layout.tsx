@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { PostHogProvider } from "./providers";
+import { CSPostHogProvider } from "@/providers/ph-provider";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
@@ -165,8 +165,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
-        <SchemaMarkup />
-        <PostHogProvider>{children}</PostHogProvider>
+        <CSPostHogProvider>
+          <SchemaMarkup />
+          {children}
+        </CSPostHogProvider>
         <Analytics />
       </body>
     </html>

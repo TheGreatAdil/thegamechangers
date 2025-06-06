@@ -291,7 +291,7 @@ export default function Component() {
                           href="https://makemypass.com/event/game-changers-meetup"
                           className="btn-gradient btn-shimmer inline-block text-lg group"
                         >
-                          <span className="relative z-10">Get Tickets</span>
+                          <button className="relative z-10">Get Tickets</button>
                         </Link>
                       </div>
                     </div>
