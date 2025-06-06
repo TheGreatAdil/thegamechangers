@@ -9,9 +9,6 @@ const brands1 = Brands.slice(0, Brands.length / 3);
 const brands2 = Brands.slice(Brands.length / 3, (Brands.length / 3) * 2);
 const brands3 = Brands.slice((Brands.length / 3) * 2, Brands.length);
 
-console.log(Brands);
-console.log(Brands.length);
-
 export default function Component() {
   return (
     <div className="min-h-screen">
