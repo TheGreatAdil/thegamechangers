@@ -238,4 +238,8 @@ export const Brands = [
     src: "/logos/low/tea talk.webp",
     name: "Tea Talk",
   }, 
+  {
+    src: "/logos/low/edvube.webp",
+    name: "Edvube",
+  }, 
 ];
