@@ -224,7 +224,7 @@ export const Brands = [
   }, 
   {
     src: "/logos/low/zmplit.webp",
-    name: "zmplit",
+    name: "Zmplit",
   }, 
   {
     src: "/logos/low/inax.webp",
