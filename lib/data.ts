@@ -242,4 +242,8 @@ export const Brands = [
     src: "/logos/low/edvube.webp",
     name: "Edvube",
   }, 
+  {
+    src: "/logos/low/rozkaam.webp",
+    name: "Rozkaam",
+  }, 
 ];
