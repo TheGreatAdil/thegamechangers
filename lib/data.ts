@@ -93,6 +93,25 @@ export const Images = [
   },
 ];
 
+export const Sessions = [
+  {
+    src: "/sessions/session 1.jpg",
+    alt: "session 1 thumbnail"
+  },
+  {
+    src: "/sessions/session 2.jpg",
+    alt: "session 2 thumbnail"
+  },
+  {
+    src: "/sessions/session 3.jpg",
+    alt: "session 3 thumbnail"
+  },
+  {
+    src: "/sessions/session 4.jpg",
+    alt: "session 4 thumbnail"
+  },
+]
+
 export const Brands = [
   {
     src: "/logos/low/stem cadets.webp",

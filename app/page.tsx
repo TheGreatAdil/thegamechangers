@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import Link from "next/link";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
-import { Brands, Images } from "@/lib/data";
+import { Brands, Images, Sessions } from "@/lib/data";
 import CaptureButton from "@/components/CaptureButton";
 
 const brands1 = Brands.slice(0, Brands.length / 3);
@@ -267,26 +267,98 @@ export default function Component() {
                   Upcoming Event
                 </h3>
                 <div className="max-w-4xl mx-auto">
-                  <div className="event-card shimmer-effect group">
-                    <div className="event-content">
-                      <div className="image-container">
-                        <Image
-                          src="/Wayanad Meet Poster.jpg"
-                          alt="Wayanad Meetup"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="flex-1 text-center lg:text-left">
+                  <div className="event-card shimmer-effect group overflow-hidden">
+                    <div className="relative w-full h-96 md:h-[30rem] mb-6">
+                      <Image
+                        src="/Wayanad Meet Poster.jpg"
+                        alt="Wayanad Meetup"
+                        fill
+                        className="object-cover rounded-xl"
+                      />
+                    </div>
+                    <div className="px-6 pb-6">
+                      <div className="text-center lg:text-left">
                         <h4 className="text-3xl font-bold text-gray-800 mb-4">
-                          Wayanad Meetup –{" "}
-                          <span className="whitespace-nowrap">June 15</span>
+                          Game Changers Meetup –{" "}
+                          <span className="whitespace-nowrap">
+                            June 15, 2025
+                          </span>
                         </h4>
-                        <p className="body-text mb-8">
-                          Our upcoming event in Wayanad will be the first
-                          full-day meetup of Game Changers — a space to build
-                          deeper connections and plan impactful initiatives
-                          together.
+                        <div className="text-lg font-semibold text-gray-700 mb-2">
+                          <p>
+                            📍 Venue: Wayanad Gate Resort, Mananthavady, Wayanad
+                          </p>
+                          <p>🕙 Time: 10:00 AM – 5:00 PM</p>
+                        </div>
+                        <p className="body-text mb-6">
+                          The Game Changers Meetup is a unique, invite-only
+                          gathering of some of the most passionate and driven
+                          young startup founders, innovators, and changemakers
+                          from across Kerala. What started as a WhatsApp group
+                          during Huddle Global 2022 has now grown into a
+                          thriving circle of founders committed to
+                          collaboration, growth, and meaningful impact.
+                        </p>
+                        <div className="mb-6 text-left">
+                          <h5 className="text-xl text-center font-bold text-gray-800 mb-4">
+                            What to Expect:
+                          </h5>
+                          <div className="space-y-3">
+                            <div className="flex items-start space-x-3">
+                              <span className="text-xl">🤝</span>
+                              <p className="body-text">
+                                Networking with 60+ startup founders
+                              </p>
+                            </div>
+                            <div className="flex items-start space-x-3">
+                              <span className="text-xl">🎯</span>
+                              <p className="body-text">
+                                4 Power-Packed Masterclasses by industry experts
+                              </p>
+                            </div>
+                            <div className="flex items-start space-x-3">
+                              <span className="text-xl">💬</span>
+                              <p className="body-text">
+                                Open discussions, idea exchanges & collaboration
+                                opportunities
+                              </p>
+                            </div>
+                            <div className="flex items-start space-x-3">
+                              <span className="text-xl">🌍</span>
+                              <p className="body-text">
+                                A focus on how we, as a collective, can
+                                contribute to society through entrepreneurship
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="mb-6 text-left">
+                          <h5 className="text-xl text-center font-bold text-gray-800 mb-4">
+                            Sessions:
+                          </h5>
+                          <div className="max-w-4xl mx-auto [mask-image:linear-gradient(to_right,transparent,white,white,white,white,transparent)]">
+                            <InfiniteSlider className="h-fit" duration={15}>
+                              {Sessions.map((session, i) => (
+                                <div
+                                  key={i}
+                                  className="relative size-48 md:size-64 mx-auto"
+                                >
+                                  <Image
+                                    fill
+                                    src={session.src}
+                                    alt={session.alt}
+                                    className="object-cover rounded-xl"
+                                  />
+                                </div>
+                              ))}
+                            </InfiniteSlider>
+                          </div>
+                        </div>
+
+                        <p className="body-text mb-8 italic">
+                          This meetup isn't just an event — it's a movement of
+                          doers. If you're passionate about building something
+                          meaningful, you'll find your tribe here.
                         </p>
                         <CaptureButton
                           href="https://makemypass.com/event/game-changers-meetup"
@@ -325,7 +397,6 @@ export default function Component() {
             </div>
           </div>
         </section>
-
         {/* Footer Section */}
         <footer className="section-spacing pb-12">
           <div className="section-container">
