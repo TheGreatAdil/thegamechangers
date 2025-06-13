@@ -361,7 +361,7 @@ export default function Component() {
                           meaningful, you'll find your tribe here.
                         </p>
                         <CaptureButton
-                          href="https://makemypass.com/event/game-changers-meetup?ticket_id=77e3dd55-0860-4dc8-9596-c9c4b3b4c4bd"
+                          href="https://makemypass.com/event/game-changers-meetup"
                           eventName="Get Tickets"
                           className="btn-gradient btn-shimmer inline-block text-lg group"
                         >
