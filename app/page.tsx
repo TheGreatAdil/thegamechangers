@@ -26,6 +26,7 @@ export default function Component() {
               Bringing together purpose-driven individuals who support each
               other's entrepreneurial journeys while building initiatives that
               create real-world impact.
+              {/*
               <br />
               <br />
               <Link
@@ -36,8 +37,17 @@ export default function Component() {
                 <span className="border-b border-red-500 whitespace-nowrap">
                   upcoming event!
                 </span>
-              </Link>
+              </Link>*/}
             </p>
+            <div className="relative w-full h-56 md:h-[32rem] mx-auto mt-12">
+              <Image
+                fill
+                priority
+                src={"/Hero.jpg"}
+                alt={"The Game Changers group at Wayanad Meet"}
+                className="object-cover rounded-xl"
+              />
+            </div>
           </div>
         </section>
 
@@ -264,10 +274,10 @@ export default function Component() {
               </div>
               <div className="mb-16" id="events">
                 <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-                  Upcoming Event
+                  Previous Event
                 </h3>
                 <div className="max-w-4xl mx-auto">
-                  <div className="event-card shimmer-effect group overflow-hidden">
+                  <div className="event-card group overflow-hidden">
                     <div className="relative w-full h-96 md:h-[30rem] mb-6">
                       <Image
                         src="/Wayanad Meet Poster.jpg"
@@ -291,43 +301,44 @@ export default function Component() {
                           <p>🕙 Time: 10:00 AM – 5:00 PM</p>
                         </div>
                         <p className="body-text mb-6">
-                          The Game Changers Meetup is a unique, invite-only
-                          gathering of some of the most passionate and driven
-                          young startup founders, innovators, and changemakers
-                          from across Kerala. What started as a WhatsApp group
-                          during Huddle Global 2022 has now grown into a
-                          thriving circle of founders committed to
-                          collaboration, growth, and meaningful impact.
+                          The Game Changers Meetup brought together an
+                          exceptional group of passionate and driven young
+                          startup founders, innovators, and changemakers from
+                          across Kerala. What began as a simple WhatsApp group
+                          during Huddle Global 2022 has now evolved into a
+                          powerful, close-knit circle committed to
+                          collaboration, growth, and real impact.
                         </p>
                         <div className="mb-6 text-left">
                           <h5 className="text-xl text-center font-bold text-gray-800 mb-4">
-                            What to Expect:
+                            What Happened:
                           </h5>
                           <div className="space-y-3">
                             <div className="flex items-start space-x-3">
                               <span className="text-xl">🤝</span>
                               <p className="body-text">
-                                Networking with 60+ startup founders
+                                Networking with 80+ startup founders
                               </p>
                             </div>
                             <div className="flex items-start space-x-3">
                               <span className="text-xl">🎯</span>
                               <p className="body-text">
-                                4 Power-Packed Masterclasses by industry experts
+                                4 Power-Packed Masterclasses led by industry
+                                experts
                               </p>
                             </div>
                             <div className="flex items-start space-x-3">
                               <span className="text-xl">💬</span>
                               <p className="body-text">
-                                Open discussions, idea exchanges & collaboration
-                                opportunities
+                                Open discussions, idea exchanges, and
+                                collaboration opportunities
                               </p>
                             </div>
                             <div className="flex items-start space-x-3">
                               <span className="text-xl">🌍</span>
                               <p className="body-text">
-                                A focus on how we, as a collective, can
-                                contribute to society through entrepreneurship
+                                A shared focus on contributing to society
+                                through entrepreneurship
                               </p>
                             </div>
                           </div>
@@ -356,17 +367,18 @@ export default function Component() {
                         </div>
 
                         <p className="body-text mb-8 italic">
-                          This meetup isn't just an event — it's a movement of
-                          doers. If you're passionate about building something
-                          meaningful, you'll find your tribe here.
+                          This meetup wasn't just another event — it was a
+                          movement of doers. For those passionate about building
+                          something meaningful, this gathering reaffirmed that
+                          their tribe is real — and growing.
                         </p>
-                        <CaptureButton
+                        {/*<CaptureButton
                           href="https://makemypass.com/event/game-changers-meetup"
                           eventName="Get Tickets"
                           className="btn-gradient btn-shimmer inline-block text-lg group"
                         >
                           Get Tickets
-                        </CaptureButton>
+                        </CaptureButton>*/}
                       </div>
                     </div>
                   </div>

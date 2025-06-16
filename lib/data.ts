@@ -265,4 +265,8 @@ export const Brands = [
     src: "/logos/low/rozkaam.webp",
     name: "Rozkaam",
   }, 
+  {
+    src: "/logos/low/perpex.webp",
+    name: "Perpex",
+  }, 
 ];
